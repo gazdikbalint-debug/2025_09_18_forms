@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzarendelés űrlap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pizzéria rendelés űrlap</h1>
+
+  <form method="post" action="https//httpbin.org/post">
+    <fieldset>
+      <legend>Személyes adatok</legend>
+      <label for="name">Név:</label>
+      <input type="text" id="name" name="name" placeholder="Pl. Kovács János" maxlength="50" required>
+      <br><br>
+
+      <label for="phone">Telefonszám:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Pl. +36 30 652 8372" maxlength="20" minlength="15" required>
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Pl. kovacs.jeno@gmail.com" maxlength="50" required>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Pizza kiválasztása</legend>
+
+      <label for="meret">Pizza méret:</label>
+      <select name="Méret" id="meret" required>
+        <option value="" disabled selected>Válasszon méretet</option>
+        <option value="kicsi">Kicsi (24)</option>
+        <option value="kozepes">Közepes (32)</option>
+        <option value="nagy">Családi (48)</option>
+      </select>
+      <br><br>
+
+      <label for="feltet">Feltétek:</label>
+      <select name="Feltét" id="feltet" required>
+        <option value="" disabled selected>Válasszon feltétet</option>
+        <option value="Songoku">Songoku (Sonka, Gomba, Kukorica)</option>
+        <option value="Sonkás kukoricás">Sonkás kukoricás (Sonka, Kukorica)</option>
+        <option value="Bacon">Bacon-ös (Bacon)</option>
+      </select>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Megjegyzés</legend>
+        <textarea Megjegyzés a rendeléshez: id="megjegyzes_mezo" name="megjegyzes" maxlength="200" rows="5" cols="100" placeholder="ide írhatod a megjegyzésed"></textarea>
+      </fieldset>
+      <br>
+    <button type="submit">Rendelés elküldése</button>
+  </form>
+</body>
