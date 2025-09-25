@@ -1,12 +1,19 @@
+body {
+    background-color: red;
+    color: ghostwhite;
+}
 h1 {
     text-align: center;
-    color: rgb(178, 176, 176);
+    color: ghostwhite;
 }
 form {
-    background-color: rgb(240, 240, 240);
+    background-color: orangered;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px ghostwhite;
     max-width: 600px;
     margin: auto;
+}
+fieldset {
+    background-color: orangered;
 }
